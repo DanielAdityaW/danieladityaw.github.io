@@ -22,8 +22,9 @@
         <nav class="primary" id="primary-nav">
           <a href="#about" data-id="1. Tentang" data-en="1. About">Tentang</a>
           <a href="#experience" data-id="2. Pengalaman" data-en="2. Experience">Pengalaman</a>
-          <a href="#skills" data-id="3. Skills" data-en="3. Skills">Skills</a>
-          <a href="#work" data-id="4. Proyek" data-en="4. Project">Proyek</a>
+          <a href="#work" data-id="3. Proyek" data-en="3. Project">Proyek</a>
+          <a href="#skills" data-id="4. Skills" data-en="4. Skills">Skills</a>
+          
           <a href="#certificates" data-id="5. Sertifikat" data-en="5. Certificates">Sertifikat</a>
           <a href="#contact" data-id="6. Kontak" data-en="6. Contact">Kontak</a>
         </nav>
@@ -201,10 +202,13 @@
           <article class="exp-step">
             <div class="exp-step__head">
               <span class="exp-step__num" aria-hidden="true">4</span>
-              <h3>Asisten Laboratorium</h3>
+              <h3 data-id="Asisten Laboratorium" data-en="Laboratory Assistant">Asisten Laboratorium</h3>
             </div>
             <p class="exp-step__meta">
-              <span class="company">Universitas Pancasila, Jakarta <span class="exp-step__type">| Part-time</span></span>
+              <span class="company">
+                <span data-id="Universitas Pancasila, Jakarta" data-en="Pancasila University, Jakarta">Universitas Pancasila, Jakarta</span>
+                <span class="exp-step__type"> | <span data-id="Part-time" data-en="Part-time">Part-time</span></span>
+              </span>
               <span class="dates" data-id="Februari 2021 — Januari 2022" data-en="February 2021 — January 2022">Februari 2021 — Januari 2022</span>
             </p>
             <p class="exp-step__desc" 
@@ -261,108 +265,7 @@
     </div>
   </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Skills &amp; Tools</h2>
-        </div>
-
-        <div class="skills__grid">
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-server"></i></span>
-              <h3>Backend</h3>
-            </div>
-            <ul>
-              <li>Java</li><li>Spring Boot</li><li>PHP</li><li>CodeIgniter</li><li>Go</li><li>Kotlin</li>
-            </ul>
-          </div>
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-desktop"></i></span>
-              <h3>Frontend</h3>
-            </div>
-            <ul>
-              <li>TypeScript</li><li>Angular</li><li>HTML/CSS</li><li>JavaScript</li><li>Bootstrap</li><li>Core UI</li>
-            </ul>
-          </div>
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-database"></i></span>
-              <h3>Database</h3>
-            </div>
-            <ul>
-              <li>PostgreSQL</li><li>SQL Server</li><li>MySQL</li><li>Redis</li><li>T-SQL (SP, CTE, View, Sub Query)</li><li>SSIS</li>
-            </ul>
-          </div>
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span>
-              <h3>DevOps</h3>
-            </div>
-            <ul>
-              <li>Docker</li><li>Kubernetes</li><li>Rancher</li><li>CI/CD</li><li>GitLab</li><li>Nginx</li>
-            </ul>
-          </div>
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
-              <h3 data-id="Machine Learning/AI" data-en="Machine Learning/AI">Machine Learning/AI</h3>
-            </div>
-            <ul>
-              <li>Python</li><li>TensorFlow</li><li>Keras</li><li>Scikit-Learn</li><li>Pandas</li><li>Matplotlib</li>
-            </ul>
-          </div>
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></span>
-              <h3 data-id="Integrasi" data-en="Integration">Integration</h3>
-            </div>
-            <ul>
-              <li>REST API</li><li>Solace</li><li>CDC Debezium</li><li>Git</li><li>Swagger</li><li>Postman</li>
-            </ul>
-          </div>
-
-           <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-gamepad"></i></span>
-              <h3>Game Devlopment</h3>
-            </div>
-            <ul>
-              <li>Godot</li><li>Unity</li><li>GDScript</li><li>C#</li>
-            </ul>
-          </div>
-
-          <div class="skill">
-            <div class="skill__head">
-              <span class="skill__icon"><i class="fa-solid fa-diagram-project"></i></span>
-              <h3 data-id="Software Engineering" data-en="Software Engineering">Software Engineering</h3>
-            </div>
-            <ul>
-              <li>Query Optimization</li>
-              <li>System Design</li>
-              <li>Clean Code</li>
-              <li>Code Review</li>
-              <li>Unit testing</li>
-              <li>Technical leadership</li>
-              <li>Refactoring</li>
-              <li>Code Migration</li>
-              <li>Database Migration</li>   
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK / PROJECTS -->
+  <!-- WORK / PROJECTS -->
     <section id="work">
       <div class="wrap">
         <div class="section-head">
@@ -414,8 +317,6 @@
               </div>
             </div>
           </article>
-
-          
 
           <article class="project-row" data-cat="game">
             <div class="project-row__meta">
@@ -646,6 +547,107 @@
 
         <div class="more-wrap">
           <button class="btn btn--ghost" id="projectMore" data-id="Lihat lainnya" data-en="See more">Lihat lainnya</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Skills &amp; Tools</h2>
+        </div>
+
+        <div class="skills__grid">
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-server"></i></span>
+              <h3>Backend</h3>
+            </div>
+            <ul>
+              <li>Java</li><li>Spring Boot</li><li>PHP</li><li>CodeIgniter</li><li>Go</li><li>Kotlin</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-desktop"></i></span>
+              <h3>Frontend</h3>
+            </div>
+            <ul>
+              <li>TypeScript</li><li>Angular</li><li>HTML/CSS</li><li>JavaScript</li><li>Bootstrap</li><li>Core UI</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-database"></i></span>
+              <h3>Database</h3>
+            </div>
+            <ul>
+              <li>PostgreSQL</li><li>SQL Server</li><li>MySQL</li><li>Redis</li><li>T-SQL (SP, CTE, View, Sub Query)</li><li>SSIS</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span>
+              <h3>DevOps</h3>
+            </div>
+            <ul>
+              <li>Docker</li><li>Kubernetes</li><li>Rancher</li><li>CI/CD</li><li>GitLab</li><li>Nginx</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
+              <h3 data-id="Machine Learning/AI" data-en="Machine Learning/AI">Machine Learning/AI</h3>
+            </div>
+            <ul>
+              <li>Python</li><li>TensorFlow</li><li>Keras</li><li>Scikit-Learn</li><li>Pandas</li><li>Matplotlib</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+              <h3 data-id="Integrasi" data-en="Integration">Integration</h3>
+            </div>
+            <ul>
+              <li>REST API</li><li>Solace</li><li>CDC Debezium</li><li>Git</li><li>Swagger</li><li>Postman</li>
+            </ul>
+          </div>
+
+           <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon" aria-hidden="true"><i class="fa-solid fa-gamepad"></i></span>
+              <h3>Game Devlopment</h3>
+            </div>
+            <ul>
+              <li>Godot</li><li>Unity</li><li>GDScript</li><li>C#</li>
+            </ul>
+          </div>
+
+          <div class="skill">
+            <div class="skill__head">
+              <span class="skill__icon"><i class="fa-solid fa-diagram-project"></i></span>
+              <h3 data-id="Software Engineering" data-en="Software Engineering">Software Engineering</h3>
+            </div>
+            <ul>
+              <li>Query Optimization</li>
+              <li>System Design</li>
+              <li>Clean Code</li>
+              <li>Code Review</li>
+              <li>Unit testing</li>
+              <li>Technical leadership</li>
+              <li>Refactoring</li>
+              <li>Code Migration</li>
+              <li>Database Migration</li>   
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
